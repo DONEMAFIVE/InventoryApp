@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AuthActivity">
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_login"
+        android:hint="@string/Login"
+        android:text="Администратор"
+        android:inputType="textPersonName"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/Login"
+        app:met_iconLeft="@drawable/ic_user"
+        app:met_iconPadding="1dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="30dp"
+
+   />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_password"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="@string/Password"
+        app:met_iconLeft="@drawable/ic_password"
+        app:met_iconPadding="1dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="30dp"
+ />
+
+    <Button
+        android:id="@+id/bt_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/c_button_signin"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.StartScanActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_obj"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/white"
+        android:padding="4dp"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            app:fab_labelStyle="@style/discription_lable"
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:fab_addButtonColorNormal="@color/colorPrimary"
+            app:fab_addButtonColorPressed="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/complite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_addButtonColorNormal="@color/colorPrimary"
+                app:fab_addButtonColorPressed="@color/colorPrimaryDark"
+                app:fab_icon="@drawable/ic_invent_com"
+                app:fab_size="normal"
+                app:fab_title="Завершить" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/not_found"
+                app:fab_title="Не найденые"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_addButtonColorNormal="@color/colorPrimary"
+                app:fab_addButtonColorPressed="@color/colorPrimaryDark"
+                app:fab_icon="@drawable/ic_not_found"
+                app:fab_size="normal" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/scaning"
+                app:fab_title="Сканировать"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_addButtonColorNormal="@color/colorPrimary"
+                app:fab_addButtonColorPressed="@color/colorPrimaryDark"
+                app:fab_icon="@drawable/ic_qr_code"
+                app:fab_size="normal" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

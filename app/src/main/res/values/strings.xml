@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InventoryApp</string>
+    <string name="Login">Логин</string>
+    <string name="Password">Пароль</string>
+</resources>
